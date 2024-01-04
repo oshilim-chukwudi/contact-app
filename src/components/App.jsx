@@ -6,12 +6,28 @@ import ContactList from "./ContactList.jsx";
 
 
 function App() {
+
+  const contacts = [
+    {
+      id:1,
+      "name":"Chuks",
+      "email":"chuks@gmail.com"
+
+    },
+    {
+      id:2,
+      "name":"Zazi",
+      "email":"Zazi@gmail.com"
+
+    }
+
+  ]
   return (
-    <>
+    <div className="ui container">
       <Header />
       <AddContact />
-      <ContactList />
-    </>
+      <ContactList contacts={contacts} />
+    </div>
   );
 }
 
