@@ -12,7 +12,7 @@ const ContactCard = (props) => {
                 <div>{email}</div>
             </div>
             <img src={userImage} alt={`User ${name}`} />
-            <i className='trash alternate outline icon' style={{ color: "red", marginTop: "7px" }}></i>
+            <i className='trash alternate outline icon' style={{ color: "red", marginTop: "7px" }} onClick={()=> props.clickHandler(id)}></i>
         </div>
     );
 }
