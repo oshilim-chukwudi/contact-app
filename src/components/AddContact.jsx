@@ -12,7 +12,7 @@ export default class AddContact extends Component {
       alert("Please enter a valid name and email address");
       return;
     }
-    this.props.addcontactHandler(this.state);
+    this.props.addContactHandler(this.state);
     this.setState({name:"", email:""});
   };
 
@@ -49,3 +49,4 @@ export default class AddContact extends Component {
     );
   }
 }
+
